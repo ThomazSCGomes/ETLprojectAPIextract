@@ -10,11 +10,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Lê as variáveis separadas do arquivo .env (sem SSL)
-POSTGRES_USER = os.getenv("POSTGRES_USER")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-POSTGRES_HOST = os.getenv("POSTGRES_HOST")
-POSTGRES_PORT = os.getenv("POSTGRES_PORT")
-POSTGRES_DB = os.getenv("POSTGRES_DB")
+POSTGRES_USER = "meubancodedados_ishl_user"
+POSTGRES_PASSWORD = "mXCnDWYgra9ZEIjMVU2nrLdgUGY1RpbP"
+POSTGRES_HOST = "dpg-cu0cb8tumphs7381el4g-a.oregon-postgres.render.com"
+POSTGRES_PORT = "5432"
+POSTGRES_DB = "meubancodedados_ishl"
 
 def ler_dados_postgres():
     """Lê os dados do banco PostgreSQL e retorna como DataFrame."""
